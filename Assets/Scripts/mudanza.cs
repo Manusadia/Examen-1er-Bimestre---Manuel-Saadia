@@ -11,7 +11,6 @@ public class Mudanza : MonoBehaviour
     int capacidadPickup = 5000;
     int capacidadUtilitario = 2000;
     int cantidadMinimaDeKilometros = 50;
-    int minimoKilos = 100;
     float horaCamion = 3000;
     float horaPickup = 4500;
     float horaUtilitario = 7000;
@@ -21,11 +20,14 @@ public class Mudanza : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(cuantosKilosALLevar < minimoKilos)
+        if(cuantosKilosALLevar < 100 || cuantosKilosALLevar >10000)
         {
-            Debug.Log("La cantidad minima de kilos a llevar es " + minimoKilos);
+            Debug.Log("La cantidad de kilos a llevar no es valida" );
             return;
-        } else if(kilometros <= cantidadMinimaDeKilometros)
+        } else if(cuantosKilosALLevar <= capacidadUtilitario)
+        {
+            precioTotal = kilometros 
+        }
             
         {
             
