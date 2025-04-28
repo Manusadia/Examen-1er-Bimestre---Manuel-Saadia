@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mudanza : MonoBehaviour
+public class mudanza : MonoBehaviour
 {
 
     public int cuantosKilosALLevar;
@@ -26,7 +26,7 @@ public class Mudanza : MonoBehaviour
             return;
         } else if(cuantosKilosALLevar <= capacidadUtilitario)
         {
-            precioTotal = kilometros 
+           
         }
             
         {
