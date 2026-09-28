@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crop</title>
+  <meta name="description" content="Crop — lo esencial, nada más.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23111'/><path d='M10 6v16h16M6 10h16v16' stroke='%23fff' stroke-width='2.5' fill='none' stroke-linecap='round'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav wrap">
+    <a href="#" class="logo" aria-label="Crop, inicio">
+      <svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><path d="M10 6v16h16M6 10h16v16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+      crop
+    </a>
+    <nav>
+      <a href="#que-es">Qué es</a>
+      <a href="#como">Cómo</a>
+      <a href="#contacto" class="btn btn-sm">Empezar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">Nuevo · 2026</p>
+      <h1>Recortá lo que sobra.<br><span>Quedate con lo esencial.</span></h1>
+      <p class="lead">Crop es una forma más simple de trabajar: menos ruido, menos pasos, más foco en lo que importa.</p>
+      <div class="actions">
+        <a href="#contacto" class="btn">Quiero probarlo</a>
+        <a href="#que-es" class="link">Saber más →</a>
+      </div>
+    </section>
+
+    <section id="que-es" class="wrap grid">
+      <article>
+        <span class="num">01</span>
+        <h3>Simple</h3>
+        <p>Sin configuraciones eternas. Abrís y funciona.</p>
+      </article>
+      <article>
+        <span class="num">02</span>
+        <h3>Rápido</h3>
+        <p>Pensado para que cada acción tome segundos, no minutos.</p>
+      </article>
+      <article>
+        <span class="num">03</span>
+        <h3>Enfocado</h3>
+        <p>Solo lo necesario. Todo lo demás, recortado.</p>
+      </article>
+    </section>
+
+    <section id="como" class="wrap split">
+      <h2>Menos es más.<br>De verdad.</h2>
+      <ol class="steps">
+        <li><span><strong>Elegí</strong> lo que querés lograr.</span></li>
+        <li><span><strong>Recortá</strong> todo lo que no suma.</span></li>
+        <li><span><strong>Avanzá</strong> sin distracciones.</span></li>
+      </ol>
+    </section>
+
+    <section id="contacto" class="wrap cta">
+      <h2>Sumate a la lista.</h2>
+      <p>Te avisamos cuando esté listo. Sin spam.</p>
+      <form class="form" onsubmit="event.preventDefault(); this.innerHTML='<p class=&quot;ok&quot;>¡Listo! Te escribimos pronto.</p>';">
+        <label for="email" class="sr-only">Email</label>
+        <input id="email" type="email" placeholder="tu@email.com" required>
+        <button class="btn" type="submit">Anotarme</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span>© <span id="y"></span> Crop</span>
+    <a href="#">Volver arriba ↑</a>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
